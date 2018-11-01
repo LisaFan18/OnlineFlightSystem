@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 8, 2014, 5:21:53 AM
+    Author     : 미소년
+*/
+
+.textbox{ 
+        padding: 1px 20px; 
+        border: 0; 
+            height:25px; 
+            width: 275px; 
+        border-radius: 10px; 
+        -moz-border-radius: 10px; 
+        -webkit-border-radius: 10px; 
+        box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset; 
+        -moz-box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset; 
+        -webkit-box-shadow: 1px 1px 0 0 #FFF, 5px 5px 40px 2px #BBB inset; 
+        -webkit-background-clip: padding-box; 
+            outline:0; 
+}
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+label {position:relative}
+label:after {
+    
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+label:before {
+    
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+*{
+   font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+button {
+   border: solid 5px rgba(207,207,207,1);
+   -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+           border-radius: 8px;
+   display: inline-block;
+   color: rgba(0,0,0,1);
+}
+button:hover {
+   border: solid 7px rgba(207,207,207,1);
+}
+button:active {
+   -webkit-border-radius: 13px;
+      -moz-border-radius: 13px;
+           border-radius: 13px;
+}
